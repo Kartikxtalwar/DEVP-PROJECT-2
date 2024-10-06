@@ -13,7 +13,7 @@
     "import seaborn as sns\n",
     "\n",
     "# Load the dataset\n",
-    "df = pd.read_csv(r'C:\\Users\\Dell\\Downloads\\Imports_Exports_Dataset.csv')  # Replace with your actual CSV file path\n",
+    "df = pd.read_csv("Imports_Exports_Dataset.csv")  # Replace with your actual CSV file path\n",
     "\n",
     "# Set the title of the Streamlit app\n",
     "st.title(\"Trade Data Visualization Dashboard\")\n",
