@@ -6,12 +6,9 @@ import seaborn as sns
 # Title of the Streamlit App
 st.title("Trade Data Analysis and Visualization Dashboard")
 
-# Load the CSV file (uploaded file)
-uploaded_file = 'Imports_Exports_Dataset.csv'  # Path to your uploaded file
 
-# Load the data using pandas
-df = pd.read_csv(uploaded_file)
-
+# Load dataset (ensure to replace the file path with your actual data file path)
+df = pd.read_csv("Imports_Exports_Dataset.csv")
 # Display the first few rows of the dataframe
 st.write("Data Preview:")
 st.write(df.head())
