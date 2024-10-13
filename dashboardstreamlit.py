@@ -7,7 +7,7 @@ import seaborn as sns
 st.title("Trade Data Visualization Dashboard")
 
 # Load the CSV file
-file_path = r'C:\\Users\\Dell\\Downloads\\Imports_Exports_Dataset.csv'
+file_path = "Imports_Exports_Dataset.csv"
 try:
     df = pd.read_csv(file_path)
 except FileNotFoundError:
