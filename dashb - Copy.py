@@ -6,13 +6,9 @@ import seaborn as sns
 # Title of the Streamlit App
 st.title("Trade Data Visualization Dashboard")
 
-# Load the CSV file
-file_path = r'C:\\Users\\Dell\\Downloads\\Imports_Exports_Dataset.csv'
-try:
-    df = pd.read_csv(file_path)
-except FileNotFoundError:
-    st.error("The file was not found. Please check the file path.")
-    st.stop()
+# Load dataset (ensure to replace the file path with your actual data file path)
+data = pd.read_csv("Imports_Exports_Dataset.csv")
+
 
 # 1. Scatter Plot: Quantity vs. Value
 st.header("Scatter Plot: Quantity vs. Value")
